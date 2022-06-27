@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-custstgacct--synapseworkspacenew123-datlakenew123",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/1d6f8854-1456-451d-b131-4ef79abc1c4d/resourceGroups/synapsetrainingbindhu/providers/Microsoft.Storage/storageAccounts/datlakenew123",
+		"groupId": "dfs",
+		"fqdns": [
+			"datlakenew123.dfs.core.windows.net"
+		]
+	}
+}
