@@ -147,12 +147,12 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datlakenew123.dfs.core.windows.net/filesystemnew/NYCTripSmall.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result]\n",
+					"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datlakenew123.dfs.core.windows.net/filesystemnew/NYCTripSmall.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result]\n\nselect * from [default].dbo.smalltripsspark",
 					"metadata": {
 						"language": "sql"
 					},
 					"currentConnection": {
-						"databaseName": "master",
+						"databaseName": "default",
 						"poolName": "Built-in"
 					},
 					"resultLimit": 5000
@@ -253,7 +253,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "d02bb520-0d1a-4127-9028-ae8173df36d1"
+						"spark.autotune.trackingId": "11fa9ca8-1a13-4da7-88a0-7684529f0acd"
 					}
 				},
 				"metadata": {
@@ -278,8 +278,7 @@
 						"sparkVersion": "3.1",
 						"nodeCount": 3,
 						"cores": 4,
-						"memory": 28,
-						"automaticScaleJobs": false
+						"memory": 28
 					},
 					"sessionKeepAliveTimeout": 30
 				},
