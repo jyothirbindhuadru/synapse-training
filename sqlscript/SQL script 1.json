@@ -2,12 +2,12 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datlakenew123.dfs.core.windows.net/filesystemnew/NYCTripSmall.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result]\n",
+			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datlakenew123.dfs.core.windows.net/filesystemnew/NYCTripSmall.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result]\n\nselect * from [default].dbo.smalltripsspark",
 			"metadata": {
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
+				"databaseName": "default",
 				"poolName": "Built-in"
 			},
 			"resultLimit": 5000
